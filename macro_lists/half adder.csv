@@ -1,0 +1,4 @@
+TP to whiteboard,t /tp 0 0 0
+place XOR,t /schem load HA_DP_XOR
+place AND,t /schem load HA_DP_AND
+place wiring,t /schem load HA_DP_WIR

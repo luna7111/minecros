@@ -1,0 +1,4 @@
+TP to whiteboard,t /tp 0 0 0
+place gates,t /schem load FA_DP_GAT
+place basic wiring,t /schem load FA_DP_BWI
+place complete wiring,t /schem load FA_DP_CWI

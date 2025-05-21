@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+		<meta name="viewport" content="width=devixe-width, initial-scale=1.0">
+		<title>Mate</title>
+	</head>
+	<body>
+		<header>
+			<h1>Mate</h1>
+			<nav>
+			{% for name in button_names %}
+				<a href="{{ name }}" >{{ name }}</a>
+			{% endfor %}
+			</nav>
+		</header>
+
+		<section>
+		{% for current_macro in macros %}
+					<form actions="/run_macro" method="post">
+				<input type="hidden" name="macro" value="{{current_macro[1]}}">
+				<button type="submit">{{current_macro[0]}}</button>
+			</form>
+		{% endfor %}
+		</section>
+	</body>
+</html> 
