@@ -36,7 +36,7 @@ for name in macro_button_names:
 	print(name)
 
 flask_app = Flask(__name__)
-
+print (type(flask_app))
 @flask_app.route("/")
 def home():
 	return render_template("index.html", macro_file_names=macro_list_files, button_names=macro_button_names)
